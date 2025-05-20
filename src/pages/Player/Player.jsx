@@ -44,7 +44,7 @@ const Player = () => {
   return (
     <div className='player'>
       <img src={back_arrow} onClick={()=>navigate('/')} ref={imgRef} alt=''/>
-      <iframe width='90%' height='90%' src={`https://www.youtube.com/embed/${apiData.key}`} title='trailer'  frameBorder="0"
+      <iframe width='90%' height='90%' src={`https://www.youtube.com/embed/${apiData.key}`} title='trailer'
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       <div className="player-info">
         <p>{apiData.published_at.slice(0,10)}</p>

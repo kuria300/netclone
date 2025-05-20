@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCx1DDEsS9qDa8l2rEDWJIdMekqdS3mD6o",
+  apiKey: process.env.FIREBASE_API_KEY,
   authDomain: "netclone-e9c99.firebaseapp.com",
   projectId: "netclone-e9c99",
   storageBucket: "netclone-e9c99.firebasestorage.app",

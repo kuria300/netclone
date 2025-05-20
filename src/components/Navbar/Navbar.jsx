@@ -6,7 +6,6 @@ import bell from '../../assets/bell_icon.svg'
 import profile from '../../assets/profile_img.png'
 import caret from '../../assets/caret_icon.svg'
 import { logout } from '../../firebase'
-import fetchMovies from '../TitleCards/TitleCards'
 import { useDebounce } from 'react-use'
 
 
@@ -24,7 +23,7 @@ const Navbar = ({setMovies}) => {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4NWNmMDkwYWI0M2M2YjhkODExOTUzMjdiMWM0NjZmOSIsIm5iZiI6MTc0NDQ1OTI1MS44Niwic3ViIjoiNjdmYTU1ZjNhMDRmNTMwYjVjOTk0ZTUzIiwic2NvcGVzIjpbImFwaV9yZWFkIl0sInZlcnNpb24iOjF9.1IT8V6vSxWXVud2vfNbcmnRkaNkjyLumynzQ_J0soxs'
+      Authorization: `Bearer ${process.env.VITE_TMDB_ACCESS_TOKEN}`
     }
   };
 
