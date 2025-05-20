@@ -22,7 +22,6 @@ A responsive **Netflix Clone** built with **React**, styled to look and feel lik
 - [Firebase Auth](https://firebase.google.com/)
 - [TMDB API](https://developers.themoviedb.org/)
 - [React Router](https://reactrouter.com/)
-- [Tailwind CSS](https://tailwindcss.com/) *(optional if you're using it)*
 - [dotenv](https://www.npmjs.com/package/dotenv) for environment variable management
 
 ---
