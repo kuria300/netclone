@@ -1,0 +1,118 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 6%;
+    position: fixed;
+    font-size: 15px;
+    color: #e5e5e5;
+    z-index: 1;
+    background-image: linear-gradient(180deg, rgba(0,0,0, 0.7) 10%, transparent);
+    transition: background-color 0.3s ease;
+}
+.navbar-left{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.navbar-left ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.navbar-left img{
+   width: 120px;
+}
+.navbar-left ul li{
+    cursor: pointer;  
+}
+.navbar-left ul li:hover{
+    color: #bababa;
+}
+.navbar-right{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.navbar-right .icons{
+    width: 20px;
+    cursor: pointer;
+}
+.navbar-right p{
+    cursor: pointer;  
+}
+.navbar-right p:hover{
+    color: #bababa; 
+}
+.navbar-right .profile{
+    border-radius: 5px;
+    width: 40px;
+}
+.navbar-profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    position: relative;
+}
+.navbar .dropdown{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: max-content;
+    padding: 15px 22px;
+    background: #191919;
+    z-index: 1;
+    border-radius: 2px;
+    text-decoration: underline;
+    display: none;
+}
+.navbar .dropdown p{
+    font-size: 12px;
+}
+.navbar-profile:hover .dropdown{
+    display: block;
+}
+.nav-dark{
+    background: #000000;
+    opacity: 0.8;
+}
+.search-input{
+    width: 100%;
+    color: white;
+    background-color: rgba(35, 34, 34, 0.6);
+    border-radius: 6px;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border: 0;
+    outline: none;
+    height: 35px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.search-input::placeholder{
+    color: white;
+}
+@media (max-width: 900px) {
+    .navbar{
+        padding: 20px 5%;
+    }
+    .navbar-left ul{
+       display: none;
+    }
+    .navbar img{
+        height: 25px;
+        width: auto;
+    }
+}
+@media (max-width: 500px) {
+    .navbar img{
+     height: 20px;
+    }
+    .navbar-right{
+        gap: 10px;
+    }
+    .navbar-right .profile{
+        height: 25px;
+    }
+}
