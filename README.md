@@ -23,6 +23,7 @@ A responsive **Netflix Clone** built with **React**, styled to look and feel lik
 - [TMDB API](https://developers.themoviedb.org/)
 - [React Router](https://reactrouter.com/)
 - [dotenv](https://www.npmjs.com/package/dotenv) for environment variable management
+- [gsap](https://gsap.com/)for animations
 
 ---
 
