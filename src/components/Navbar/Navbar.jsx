@@ -23,7 +23,7 @@ const Navbar = ({setMovies}) => {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: `Bearer ${process.env.VITE_TMDB_ACCESS_TOKEN}`
+      Authorization: `Bearer ${import.meta.env.VITE_TMDB_ACCESS_TOKEN}`
     }
   };
 

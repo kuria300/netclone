@@ -3,15 +3,19 @@ import {createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword, sig
 import {addDoc, collection, getFirestore} from 'firebase/firestore'
 import { toast } from "react-toastify";
 
+console.log('Firebase API Key:', import.meta.env.VITE_FIREBASE_API_KEY);
+console.log(import.meta.env.VITE_TMDB_ACCESS_TOKEN)
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: process.env.FIREBASE_API_KEY,
+  apiKey:import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "netclone-e9c99.firebaseapp.com",
   projectId: "netclone-e9c99",
   storageBucket: "netclone-e9c99.firebasestorage.app",
   messagingSenderId: "778386261727",
   appId: "1:778386261727:web:a03d8de445fe1ae54ccb6a"
 };
+
 
 // Initialize Firebase connects your app to firebase 
 const app = initializeApp(firebaseConfig);

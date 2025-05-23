@@ -17,7 +17,7 @@ const Player = () => {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4NWNmMDkwYWI0M2M2YjhkODExOTUzMjdiMWM0NjZmOSIsIm5iZiI6MTc0NDQ1OTI1MS44Niwic3ViIjoiNjdmYTU1ZjNhMDRmNTMwYjVjOTk0ZTUzIiwic2NvcGVzIjpbImFwaV9yZWFkIl0sInZlcnNpb24iOjF9.1IT8V6vSxWXVud2vfNbcmnRkaNkjyLumynzQ_J0soxs'
+      Authorization: `Bearer ${import.meta.env.VITE_TMDB_ACCESS_TOKEN}`
     }
   };
   const fetchVideo= async()=>{
